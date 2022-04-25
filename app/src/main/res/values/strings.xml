@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">HealthAndFitnessApp</string>
+
+    <string name="mainText1">Welcome,  </string>
+
+    <string name="mainText2">. \nWhat do you want to do today?</string>
+
+    <string name="calCountUnit">Daily amount in kg</string>
+
+    <string name="instructions">
+        Please watch the video linked below, detailing the workout\n
+        \nFollow the instructions provided in the video and complete the workout.\n
+        \nAfter completing the workout, self evaluate yourself on number of reps, speed, form, etc.\n
+        \nAccording to your self evaluation, press 1 of the 3 buttons provided below to record your progress.\n
+
+    </string>
+
+    <string-array name="healthTips">
+        <item>1. Do not drink sugar calories: Sugary drinks are among the most fattening items you can put into your body.</item>
+        <item>2. Eat nuts : Despite being high in fat, nuts are incredibly nutritious and healthy, and help fight heart disease.</item>
+        <item>3. Do not fear coffee : It is high in antioxidants, and studies have linked it to longevity.</item>
+        <item>4. Get enough sleep : Sleep deprivation is one of the strongest individual risk factors for weight gain and obesity.</item>
+        <item>5. Take probiotics and fibre : The bacteria in your gut are incredibly important for overall health.</item>
+        <item>6. Drink some water: Drinking enough water can boost metabolism.</item>
+        <item>7. Don’t overcook your meat : Overcooking meat can lead to the formation of cancerogenic substances.</item>
+        <item>8. Avoid bright lights before sleep: Use warm light and filter glasses to block blue light and improve sleep quality.</item>
+        <item>9. Eat enough protein : Protein is vital for optimal health and is particularly important for weight loss.</item>
+        <item>10. Do some cardio : Cardio is one of the best things you can do for your mental and physical health.</item>
+        <item>11. Use extra virgin olive oil : It is one of the healthiest vegetable oils, loaded with anti inflammatory agents</item>
+        <item>12. Do not eat refined carbs : They are highly processed, low in nutrients, and can harm your health when eaten in excess.</item>
+        <item>13. Lift heavy things : Lifting weights strengthens your muscles and body composition. It also leads to improvements in metabolism.</item>
+        <item>14. Avoid processed junk food. All your exercise will go to waste</item>
+        <!--<item>4. Do not drink sugar calories. NO, diet coke does not count!</item>
+        <item> Get enough sleep; Exercise cannot replace that</item>
+        <item>2. Drink plenty of water. All that sweat comes from somewhere, right!</item>
+        -->
+        <item>15. Eat vegetables and fruits. They also are the best bang for the buck and good for the environment too</item>
+        <item>16. Do not Smoke. Duh!</item>
+    </string-array>
+
+    <string-array name="exercises">
+        <item>Chest Workout</item>
+        <item>Shoulder Workout</item>
+        <item>Back Workout</item>
+        <item>Biceps Workout</item>
+        <item>Triceps Workout</item>
+        <item>Legs Workout</item>
+        <item>Abs Workout</item>
+        <item>Cardio</item>
+    </string-array>
+
+    <string-array name="links">
+        <item>https://youtu.be/UU_UnZjtG74</item>
+        <item>https://youtu.be/mbkIELD3AqM</item>
+        <item>https://youtu.be/ct9OFwNUtdQ</item>
+        <item>https://youtu.be/kYUMGjubpQg</item>
+        <item>https://youtu.be/W2PleUxEVuw</item>
+        <item>https://youtu.be/pN84zT_eKCQ</item>
+        <item>https://youtu.be/8e8wEwnFuYo</item>
+        <item>https://youtu.be/QdAX3MyqV38</item>
+    </string-array>
+
+</resources>

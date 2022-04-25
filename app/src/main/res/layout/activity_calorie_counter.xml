@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalorieCounterActivity">
+
+    <Button
+        android:id="@+id/homeBtn3"
+        android:layout_width="59dp"
+        android:layout_height="32dp"
+        android:text="Home"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/calCountTitleTextView"
+        app:layout_constraintEnd_toEndOf="@+id/riceTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/calCountTitleTextView" />
+
+    <TextView
+        android:id="@+id/calCountTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calorie Counter"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <TextView
+        android:id="@+id/riceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rice"
+        app:layout_constraintBottom_toTopOf="@+id/wheatTextView"
+        app:layout_constraintEnd_toStartOf="@+id/riceEditText"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calCountTitleTextView" />
+
+    <TextView
+        android:id="@+id/wheatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wheat"
+        app:layout_constraintBottom_toTopOf="@+id/pulsesTextView"
+        app:layout_constraintEnd_toEndOf="@+id/riceTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/riceTextView"
+        app:layout_constraintTop_toBottomOf="@+id/riceTextView" />
+
+    <TextView
+        android:id="@+id/pulsesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pulses"
+        app:layout_constraintBottom_toTopOf="@+id/meatTextView"
+        app:layout_constraintEnd_toEndOf="@+id/wheatTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/wheatTextView"
+        app:layout_constraintTop_toBottomOf="@+id/wheatTextView" />
+
+    <TextView
+        android:id="@+id/meatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meat"
+        app:layout_constraintBottom_toTopOf="@+id/fruitsVegTextView"
+        app:layout_constraintEnd_toEndOf="@+id/pulsesTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/pulsesTextView"
+        app:layout_constraintTop_toBottomOf="@+id/pulsesTextView" />
+
+    <TextView
+        android:id="@+id/fruitsVegTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fruits, Vegetables"
+        app:layout_constraintBottom_toTopOf="@+id/dairyTextView"
+        app:layout_constraintEnd_toEndOf="@+id/meatTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/meatTextView"
+        app:layout_constraintTop_toBottomOf="@+id/meatTextView" />
+
+    <TextView
+        android:id="@+id/dairyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dairy"
+        app:layout_constraintBottom_toTopOf="@+id/calCountBtn"
+        app:layout_constraintEnd_toEndOf="@+id/fruitsVegTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/fruitsVegTextView"
+        app:layout_constraintTop_toBottomOf="@+id/fruitsVegTextView" />
+
+    <EditText
+        android:id="@+id/riceEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/calCountUnit"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/riceTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/riceTextView"
+        app:layout_constraintTop_toTopOf="@+id/riceTextView" />
+
+    <EditText
+        android:id="@+id/wheatEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/calCountUnit"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/wheatTextView"
+        app:layout_constraintEnd_toEndOf="@+id/riceEditText"
+        app:layout_constraintStart_toStartOf="@+id/riceEditText"
+        app:layout_constraintTop_toTopOf="@+id/wheatTextView" />
+
+    <EditText
+        android:id="@+id/pulsesEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/calCountUnit"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/pulsesTextView"
+        app:layout_constraintEnd_toEndOf="@+id/wheatEditText"
+        app:layout_constraintStart_toStartOf="@+id/wheatEditText"
+        app:layout_constraintTop_toTopOf="@+id/pulsesTextView" />
+
+    <EditText
+        android:id="@+id/meatEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/calCountUnit"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/meatTextView"
+        app:layout_constraintEnd_toEndOf="@+id/pulsesEditText"
+        app:layout_constraintStart_toStartOf="@+id/pulsesEditText"
+        app:layout_constraintTop_toTopOf="@+id/meatTextView" />
+
+    <EditText
+        android:id="@+id/fruitsVegEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/calCountUnit"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/fruitsVegTextView"
+        app:layout_constraintEnd_toEndOf="@+id/meatEditText"
+        app:layout_constraintStart_toStartOf="@+id/meatEditText"
+        app:layout_constraintTop_toTopOf="@+id/fruitsVegTextView" />
+
+    <EditText
+        android:id="@+id/dairyEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/calCountUnit"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/dairyTextView"
+        app:layout_constraintEnd_toEndOf="@+id/fruitsVegEditText"
+        app:layout_constraintStart_toStartOf="@+id/fruitsVegEditText"
+        app:layout_constraintTop_toTopOf="@+id/dairyTextView" />
+
+    <TextView
+        android:id="@+id/calAmtTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/calRecomTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calCountBtn" />
+
+    <TextView
+        android:id="@+id/calRecomTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/calAmtTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/calAmtTextView"
+        app:layout_constraintTop_toTopOf="@+id/calAmtTextView" />
+
+    <Button
+        android:id="@+id/calCountBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate Calories"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/calResetBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.83" />
+
+    <Button
+        android:id="@+id/calResetBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="@+id/calCountBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/calCountBtn"
+        app:layout_constraintTop_toTopOf="@+id/calCountBtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E46E65"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/mainTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <TextView
+        android:id="@+id/infoCentreMainTextView"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:gravity="center_vertical"
+        android:text="TextView"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.23" />
+
+    <TextView
+        android:id="@+id/infoRightMainTextView"
+        android:layout_width="20sp"
+        android:layout_height="50sp"
+        android:gravity="bottom|center_horizontal"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/infoCentreMainTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/infoCentreMainTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/infoLeftMainTextView"
+        android:layout_width="20sp"
+        android:layout_height="50sp"
+        android:gravity="bottom|center_horizontal"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/infoCentreMainTextView"
+        app:layout_constraintEnd_toStartOf="@+id/infoCentreMainTextView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/signOutMainBtn"
+        android:layout_width="65dp"
+        android:layout_height="33dp"
+        android:background="#000000"
+        android:text="Sign Out"
+        android:textColor="#FFFFFF"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/mainTitleTextView"
+        app:layout_constraintEnd_toStartOf="@+id/infoCentreMainTextView"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mainTitleTextView" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.992">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:minWidth="500sp">
+
+            <Button
+                android:id="@+id/bmiMainBtn"
+                android:layout_width="130sp"
+                android:layout_height="130sp"
+                android:layout_marginStart="16dp"
+                android:text="BMI Calculator"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/healthTipsMainBtn"
+                android:layout_width="130sp"
+                android:layout_height="130sp"
+                android:layout_marginStart="16dp"
+                android:text="Health Tips"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/bmiMainBtn"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/exerciseListMainBtn"
+                android:layout_width="130sp"
+                android:layout_height="130sp"
+                android:layout_marginStart="16dp"
+                android:text="Exercise List"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/calCounterMainBtn"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/calCounterMainBtn"
+                android:layout_width="130sp"
+                android:layout_height="130sp"
+                android:layout_marginStart="16dp"
+                android:text="Calorie Counter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/healthTipsMainBtn"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/mainTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoCentreMainTextView" />
+
+    <TextView
+        android:id="@+id/infoLeftLabelTextView"
+        android:layout_width="110sp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:text="TextView"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toBottomOf="@+id/infoCentreMainTextView"
+        app:layout_constraintEnd_toStartOf="@+id/infoLeftMainTextView"
+        app:layout_constraintTop_toTopOf="@+id/infoCentreMainTextView" />
+
+    <TextView
+        android:id="@+id/infoRightLabelTextView"
+        android:layout_width="110sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toBottomOf="@+id/infoCentreMainTextView"
+        app:layout_constraintStart_toEndOf="@+id/infoRightMainTextView"
+        app:layout_constraintTop_toTopOf="@+id/infoCentreMainTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

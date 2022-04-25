@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BmiCalculatorActivity">
+
+    <TextView
+        android:id="@+id/bmiTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI Calculator"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <TextView
+        android:id="@+id/weightTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight:"
+        app:layout_constraintBottom_toTopOf="@+id/heightTextView"
+        app:layout_constraintEnd_toStartOf="@+id/weightEditText"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bmiTitleTextView" />
+
+    <TextView
+        android:id="@+id/heightTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Height:"
+        app:layout_constraintBottom_toTopOf="@+id/ageTextView"
+        app:layout_constraintEnd_toEndOf="@+id/weightTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/weightTextView"
+        app:layout_constraintTop_toBottomOf="@+id/weightTextView" />
+
+    <EditText
+        android:id="@+id/weightEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter your weight (in kg)"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/weightTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/weightTextView"
+        app:layout_constraintTop_toTopOf="@+id/weightTextView" />
+
+    <EditText
+        android:id="@+id/heightEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter your height (in cm)"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/heightTextView"
+        app:layout_constraintEnd_toEndOf="@+id/weightEditText"
+        app:layout_constraintStart_toStartOf="@+id/weightEditText"
+        app:layout_constraintTop_toTopOf="@+id/heightTextView" />
+
+    <Button
+        android:id="@+id/bmiCalcBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate BMI"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bmiResetBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <Button
+        android:id="@+id/bmiResetBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="@+id/bmiCalcBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bmiCalcBtn"
+        app:layout_constraintTop_toTopOf="@+id/bmiCalcBtn" />
+
+    <TextView
+        android:id="@+id/bmiAmtTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bmiCatTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <TextView
+        android:id="@+id/bmiCatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/bmiAmtTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bmiAmtTextView"
+        app:layout_constraintTop_toTopOf="@+id/bmiAmtTextView" />
+
+    <Button
+        android:id="@+id/homeBtn"
+        android:layout_width="59dp"
+        android:layout_height="32dp"
+        android:text="Home"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bmiTitleTextView"
+        app:layout_constraintEnd_toEndOf="@+id/weightTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bmiTitleTextView" />
+
+    <TextView
+        android:id="@+id/ageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age:"
+        app:layout_constraintBottom_toTopOf="@+id/genderTextView"
+        app:layout_constraintEnd_toEndOf="@+id/heightTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/heightTextView"
+        app:layout_constraintTop_toBottomOf="@+id/heightTextView" />
+
+    <TextView
+        android:id="@+id/genderTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender:"
+        app:layout_constraintBottom_toTopOf="@+id/bmiCalcBtn"
+        app:layout_constraintEnd_toEndOf="@+id/ageTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/ageTextView"
+        app:layout_constraintTop_toBottomOf="@+id/ageTextView" />
+
+    <EditText
+        android:id="@+id/ageEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter your age (in years)"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/ageTextView"
+        app:layout_constraintEnd_toEndOf="@+id/heightEditText"
+        app:layout_constraintStart_toStartOf="@+id/heightEditText"
+        app:layout_constraintTop_toTopOf="@+id/ageTextView" />
+
+    <EditText
+        android:id="@+id/genderEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:digits="M F"
+        android:ems="10"
+        android:hint="Enter your gender (M /F)"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/genderTextView"
+        app:layout_constraintEnd_toEndOf="@+id/ageEditText"
+        app:layout_constraintStart_toStartOf="@+id/ageEditText"
+        app:layout_constraintTop_toTopOf="@+id/genderTextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

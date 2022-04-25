@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="rice">130</integer>
+    <integer name="wheat">340</integer>
+    <integer name="pulses">132</integer>
+    <integer name="fruitsVeg">32</integer>
+    <integer name="meat">247</integer>
+    <integer name="dairy">50</integer>
+
+</resources>
